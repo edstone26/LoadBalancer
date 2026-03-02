@@ -1,0 +1,10 @@
+# Load Balancer Configuration
+num_servers 10
+cycles 10000
+min_queue_ratio 50
+max_queue_ratio 80
+server_wait_cycles 3
+blocked_ip_ranges 192.168.0.25 192.168.0.46 192.168.0.97 192.168.0.134 192.168.0.245 192.168.0.213 192.168.0.167 192.168.0.86
+log_file loadbalancer.log
+min_task_time 5
+max_task_time 10
