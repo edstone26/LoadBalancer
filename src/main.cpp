@@ -21,7 +21,7 @@
  * - Colored console output and detailed log file
  *
  * @section architecture Architecture
- * - TrafficGenerator - Generates random requests and feeds them to the Switch
+ * - TrafficGenerator - Generates random requests and feeds them to the 
  * - Switch - Routes requests to the correct LoadBalancer based on job type
  * - LoadBalancer - Manages a pool of WebServers and a request queue
  * - WebServer - Processes individual requests over simulated clock cycles

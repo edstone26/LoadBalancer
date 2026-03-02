@@ -3,3 +3,7 @@ unmount.sh
 Udrive/
 logs/
 main
+build/
+pre-deliverable/
+docs/
+LoadBalancer.zip

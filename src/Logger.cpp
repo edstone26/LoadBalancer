@@ -62,26 +62,26 @@ void Logger::log(int clock, const std::string& event, Level level) {
  */
 void Logger::logStart(Config config) {
     file << "\n=== START ===\n";
-    file << "Number of servers : " << config.num_servers << "\n";
-    file << "Number of cycles  : " << config.cycles << "\n";
-    file << "Min queue ratio   : " << config.min_queue_ratio << "\n";
-    file << "Max queue ratio   : " << config.max_queue_ratio << "\n";
-    file << "Server wait cycles: " << config.server_wait_cycles << "\n";
-    file << "Log file          : " << config.log_file << "\n";
-    file << "Blocked IP ranges : ";
+    file << "Number of servers  : " << config.num_servers << "\n";
+    file << "Number of cycles   : " << config.cycles << "\n";
+    file << "Min queue ratio    : " << config.min_queue_ratio << "\n";
+    file << "Max queue ratio    : " << config.max_queue_ratio << "\n";
+    file << "Server wait cycles : " << config.server_wait_cycles << "\n";
+    file << "Log file           : " << config.log_file << "\n";
+    file << "Blocked IP ranges  : ";
     for (const auto& ip_range : config.blocked_ip_ranges) {
         file << ip_range << " ";
     }
     file << std::endl << std::endl;
 
     std::cout << RESET << "\n=== START ===\n";
-    std::cout << "Number of servers : " << config.num_servers << "\n";
-    std::cout << "Number of cycles  : " << config.cycles << "\n";
-    std::cout << "Min queue ratio   : " << config.min_queue_ratio << "\n";
-    std::cout << "Max queue ratio   : " << config.max_queue_ratio << "\n";
-    std::cout << "Server wait cycles: " << config.server_wait_cycles << "\n";
-    std::cout << "Log file          : " << config.log_file << "\n";
-    std::cout << "Blocked IP ranges : ";
+    std::cout << "Number of servers  : " << config.num_servers << "\n";
+    std::cout << "Number of cycles   : " << config.cycles << "\n";
+    std::cout << "Min queue ratio    : " << config.min_queue_ratio << "\n";
+    std::cout << "Max queue ratio    : " << config.max_queue_ratio << "\n";
+    std::cout << "Server wait cycles : " << config.server_wait_cycles << "\n";
+    std::cout << "Log file           : " << config.log_file << "\n";
+    std::cout << "Blocked IP ranges  : ";
     for (const auto& ip_range : config.blocked_ip_ranges) {
         std::cout << ip_range << " ";
     }
@@ -117,29 +117,29 @@ void Logger::logSummary(
 )
 {
     file << "\n=== SUMMARY ===\n";
-    file << "Total requests generated: " << total_requests << "\n";
-    file << "Processing requests     : " << processing << "\n";
-    file << "Streaming requests      : " << streaming << "\n";
-    file << "Blocked requests        : " << blocked << "\n";
-    file << "Servers added           : " << servers_added << "\n";
-    file << "Servers removed         : " << servers_removed << "\n";
-    file << "Starting Queue          : " << start_queue << "\n";
-    file << "Ending Queue            : " << end_queue << "\n";
-    file << "Task time range         : " << min_task_time << " - " << max_task_time << " cycles\n";
-    file << "Active Servers          : " << active_servers << "\n";
-    file << "Idle Servers            : " << inactive_servers << std::endl;
+    file << "Total requests generated : " << total_requests << "\n";
+    file << "Processing requests      : " << processing << "\n";
+    file << "Streaming requests       : " << streaming << "\n";
+    file << "Blocked requests         : " << blocked << "\n";
+    file << "Servers added            : " << servers_added << "\n";
+    file << "Servers removed          : " << servers_removed << "\n";
+    file << "Starting Queue           : " << start_queue << "\n";
+    file << "Ending Queue             : " << end_queue << "\n";
+    file << "Task time range          : " << min_task_time << " - " << max_task_time << " cycles\n";
+    file << "Active Servers           : " << active_servers << "\n";
+    file << "Idle Servers             : " << inactive_servers << std::endl;
 
     // console mirrors the file but with color
     std::cout << "\033[36m\n=== SUMMARY ===\033[0m\n";
-    std::cout << "\033[32mTotal requests generated: " << total_requests << "\033[0m\n";
-    std::cout << "\033[32mProcessing requests     : " << processing     << "\033[0m\n";
-    std::cout << "\033[32mStreaming requests      : " << streaming       << "\033[0m\n";
-    std::cout << "\033[31mBlocked requests        : " << blocked         << "\033[0m\n";
-    std::cout << "\033[33mServers added           : " << servers_added   << "\033[0m\n";
-    std::cout << "\033[33mServers removed         : " << servers_removed << "\033[0m\n";
-    std::cout << "\033[33mStarting Queue          : " << start_queue     << "\033[0m\n";
-    std::cout << "\033[33mEnding Queue            : " << end_queue       << "\033[0m\n";
-    std::cout << "\033[33mTask time range         : " << min_task_time << " - " << max_task_time << " cycles\033[0m\n";
-    std::cout << "\033[33mActive Servers          : " << active_servers  << "\033[0m\n";
-    std::cout << "\033[33mIdle Servers            : " << inactive_servers << "\033[0m\n";
+    std::cout << "\033[32mTotal requests generated : " << total_requests << "\033[0m\n";
+    std::cout << "\033[32mProcessing requests      : " << processing     << "\033[0m\n";
+    std::cout << "\033[32mStreaming requests       : " << streaming       << "\033[0m\n";
+    std::cout << "\033[31mBlocked requests         : " << blocked         << "\033[0m\n";
+    std::cout << "\033[33mServers added            : " << servers_added   << "\033[0m\n";
+    std::cout << "\033[33mServers removed          : " << servers_removed << "\033[0m\n";
+    std::cout << "\033[33mStarting Queue           : " << start_queue     << "\033[0m\n";
+    std::cout << "\033[33mEnding Queue             : " << end_queue       << "\033[0m\n";
+    std::cout << "\033[33mTask time range          : " << min_task_time << " - " << max_task_time << " cycles\033[0m\n";
+    std::cout << "\033[33mActive Servers           : " << active_servers  << "\033[0m\n";
+    std::cout << "\033[33mIdle Servers             : " << inactive_servers << "\033[0m\n";
 }
