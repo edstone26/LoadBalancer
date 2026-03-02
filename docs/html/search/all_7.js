@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['request_0',['Request',['../structRequest.html',1,'']]],
-  ['routerequest_1',['routeRequest',['../classSwitch.html#a76300f0bf069412a47c24386a2f2934a',1,'Switch']]]
+  ['numrequests_0',['numRequests',['../classLoadBalancer.html#ade3076c0a0411696b901308d47fa80d9',1,'LoadBalancer']]],
+  ['numserversadded_1',['numServersAdded',['../classLoadBalancer.html#ae2997d5accbc6b1cafa37b041e7efbf2',1,'LoadBalancer']]],
+  ['numserversremoved_2',['numServersRemoved',['../classLoadBalancer.html#a68698e8381253bb01e9207e467004775',1,'LoadBalancer']]]
 ];

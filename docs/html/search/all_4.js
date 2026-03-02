@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['loadbalancer_0',['loadbalancer',['../classLoadBalancer.html',1,'LoadBalancer'],['../classLoadBalancer.html#a6e6669a6a4f0c3df345a13246b17a84b',1,'LoadBalancer::LoadBalancer()'],['../classLoadBalancer.html#a01dfdf79a136df40d43081ba8d07ead0',1,'LoadBalancer::LoadBalancer(int num_servers, Logger *logger, Config config)']]],
-  ['loadfromfile_1',['loadFromFile',['../structConfig.html#a431cacba5732421d3e58e25feabeb932',1,'Config']]],
-  ['log_2',['log',['../classLogger.html#a2d5ba5d829ab0ca67e30ae65b921db5f',1,'Logger']]],
-  ['logger_3',['logger',['../classLogger.html',1,'Logger'],['../classLogger.html#a4f2ee02db1d03a83b6b9b43808e09f15',1,'Logger::Logger(const std::string &amp;filename)']]],
-  ['logstart_4',['logStart',['../classLogger.html#ac7f0d17ec943067ef93b767d892842e5',1,'Logger']]],
-  ['logsummary_5',['logSummary',['../classLogger.html#a08e356881d4f772b66e259c9d42afdc2',1,'Logger']]]
+  ['generateinitialtraffic_0',['generateInitialTraffic',['../classTrafficGenerator.html#af9d354ffa8e975c0a2110546fe015e53',1,'TrafficGenerator']]],
+  ['generaterandomrequest_1',['generateRandomRequest',['../classTrafficGenerator.html#ae6b1041c85fb7c05b463e2b5ebb68da2',1,'TrafficGenerator']]],
+  ['getactiveservercount_2',['getActiveServerCount',['../classLoadBalancer.html#aed0d67bbc99745aa4a263befb9ed4a5a',1,'LoadBalancer']]],
+  ['getinactiveservercount_3',['getInactiveServerCount',['../classLoadBalancer.html#ab649c7788f91390342543af70ecf5cea',1,'LoadBalancer']]],
+  ['getrequest_4',['getRequest',['../classWebServer.html#aa5e1fe7b67c6ef5bef717d774ccb53f9',1,'WebServer']]],
+  ['gettotalrequests_5',['getTotalRequests',['../classTrafficGenerator.html#ac025dac615fd90594e0a801242795549',1,'TrafficGenerator']]]
 ];

@@ -5,6 +5,44 @@
 
 #include <iostream>
 
+/**
+ * @mainpage Load Balancer Simulation
+ *
+ * @section intro Introduction
+ * This project simulates a load balancer that dynamically manages web servers
+ * to handle incoming network requests. It features a high-level Switch that
+ * routes requests to two separate load balancers based on job type.
+ *
+ * @section features Features
+ * - Dynamic server allocation and deallocation based on queue size
+ * - Switch that routes processing and streaming requests to separate load balancers
+ * - IP range blocker to prevent DOS attacks
+ * - Configurable via config.txt without editing source code
+ * - Colored console output and detailed log file
+ *
+ * @section architecture Architecture
+ * - TrafficGenerator - Generates random requests and feeds them to the Switch
+ * - Switch - Routes requests to the correct LoadBalancer based on job type
+ * - LoadBalancer - Manages a pool of WebServers and a request queue
+ * - WebServer - Processes individual requests over simulated clock cycles
+ * - Request - Struct holding request data (IP in/out, job type, time required)
+ * - Logger - Handles console and file logging
+ * - Config - Loads simulation parameters from config.txt
+ *
+ * @section usage Usage
+ * @code
+ * ./main
+ * @endcode
+ *
+ * @section config Configuration
+ * Edit config.txt to change simulation parameters:
+ * - num_servers, cycles, min_queue_ratio, max_queue_ratio
+ * - server_wait_cycles, new_requests_per_cycle
+ * - blocked_ip_ranges, log_file, min_task_time, max_task_time
+ *
+ * @author William Stone
+ * @date 2026
+ */
 int main(int argc, char* argv[]) 
 {
 

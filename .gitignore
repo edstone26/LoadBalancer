@@ -1,3 +1,5 @@
 mount.sh
 unmount.sh
 Udrive/
+logs/
+main
